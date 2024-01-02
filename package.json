@@ -1,0 +1,42 @@
+{
+  "name": "vite-template",
+  "description": "Vite Template",
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [
+    "vanilla",
+    "javascript",
+    "postcss",
+    "eslint",
+    "prettier",
+    "scaffold",
+    "vite",
+    "vitejs"
+  ],
+  "scripts": {
+    "dev": "vite --host --open",
+    "lint": "eslint --ext .js ./",
+    "lint:fix": "eslint --fix --ext .js ./",
+    "format": "prettier --write \"./**/*.{js,jsx,json,css}\"",
+    "build": "vite build",
+    "preview": "vite preview --open",
+    "buildpreview": "vite build && vite preview --open"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.2",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.2",
+    "postcss": "^8.4.32",
+    "postcss-nesting": "^12.0.2",
+    "prettier": "^3.1.1",
+    "vite": "5.0.10",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "the-new-css-reset": "^1.11.2"
+  }
+}
