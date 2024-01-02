@@ -36,6 +36,8 @@
     ],
     "import/no-cycle": "off",
     "no-restricted-syntax": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-unused-vars": "off"
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "vite-template",
-  "description": "Vite Template",
+  "name": "music-player-js",
+  "description": "Music Player",
   "version": "1.0.0",
   "type": "module",
   "keywords": [

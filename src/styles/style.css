@@ -1,73 +1,97 @@
 /*@import './header.css';*/
-
-@font-face {
-    font-family: 'roboto';
-    src: url('../assets/fonts/Roboto-Thin.ttf');
-    font-weight: 200;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url('../assets/fonts/Roboto-Medium.ttf');
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url('../assets/fonts/Roboto-Bold.ttf');
-    font-weight: 900;
-    font-display: swap;
-}
-
 * {
-    font-family: roboto, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-:root {
-  --sidebar-width: 20vw;
-  --board-height: 75vh;
-  --board-width: 60vw;
-  --card-height: calc((var(--board-height) * 0.8) / 3);
-  --card-width: calc((var(--board-width) * 0.8) / 8);
-  --blue-bg: #065094;
-  --red-bg: #d2202f;
-  --light-blue-bg: skyblue;
+body {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-.hide {
-  display: none !important;
-}
-
-.two-columns {
-  grid-template-columns: 2fr 3fr !important;
-}
-
-.double-width {
-  width: calc(var(--sidebar-width) * 2) !important;
-}
-
-/* Main container */
 #container {
-  background-color: var(--light-blue-bg);
-  display: grid;
-  grid-template-rows: 15vh 85vh;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
 
-#game-container {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+#boombox {
+  background-image: url(/boombox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70vh;
+  margin: auto;
+  position: relative;
+  width: 100vh;
+}
+
+#info {
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  height: 17vh;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 36vh;
+  transform: translate(-50%);
+  width: 26vh;
+}
+
+#info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#info h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#progress-bar {
+  background-color: whitesmoke;
+  border: 3px solid black;
+  height: 4.5vh;
+  left: 50%;
+  position: absolute;
+  top: 58vh;
+  transform: translate(-50%);
+  width: 39vh;
+}
+
+#progress {
+  background-color: #333;
+  height: 100%;
+  width: 0;
+}
+
+#buttons {
+  background-color: whitesmoke;
+  display: flex;
+  height: 7vh;
+  justify-content: space-around;
+  left: 50%;
+  position: absolute;
+  top: 25vh;
+  transform: translate(-50%);
+  width: 36vh;
+}
+
+.btn {
+  color: black;
+  cursor: pointer;
+  font-size: 5.5vh;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: translateY(2px);
 }

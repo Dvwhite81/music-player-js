@@ -1,3 +1,3 @@
-# vite-template
+# music-player-js
 
-Vite Template
+Basic music player built with JS, HTML, and CSS.

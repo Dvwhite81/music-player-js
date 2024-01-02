@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon/favicon-192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite Template</title>
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/c72350b913.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
-        <div id="container"></div>
+    <div id="container">
+    <div id="boombox">
+      <div id="buttons">
+        <button id="prev" class="btn"><i class="fas fa-backward"></i></button>
+        <button id="play" class="btn"><i class="fas fa-play"></i></button>
+        <button id="pause" class="btn"><i class="fas fa-pause"></i></button>
+        <button id="next" class="btn"><i class="fas fa-forward"></i></button>
+        <button id="repeat" class="btn"><i class="fas fa-redo"></i></button>
+      </div>
+      <div id="info">
+        <h2>Title</h2>
+        <h3>Name</h3>
+      </div>
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+    </div>
+    </div>
+
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
